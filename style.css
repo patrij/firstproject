@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Horizontal Navigation Bar */
+.horizontalnavbar {
+  justify-content: end;
+  display: flex;
+  height: 50px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+}
+li img {
+  width: 25px;
+  display: none;
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin-right: 20px;
+  font-size: 15px;
+}
+ul li a {
+  color: rgb(113, 112, 112);
+}
+ul :link {
+  text-decoration: none;
+}
+
+ul :hover {
+  color: black;
+}
+/* Page 1 Design */
+.page1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("background.jpg");
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  height: 80dvh;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+}
+.hook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.logo img {
+  margin-right: 0;
+  width: 300px;
+}
+.text {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.brandname {
+  margin-left: 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.brandname h5 {
+  letter-spacing: 20px;
+}
+
+/* For Mobile Version */
+@media (max-width: 600px) {
+  .logo img {
+    margin-right: 0;
+    width: 160px;
+  }
+  .brandname h5 {
+    letter-spacing: 15px;
+  }
+  .brandname {
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .text {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  .page1 {
+    width: auto;
+  }
+
+  .hook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100dvw;
+  }
+  ul li a {
+    display: none;
+  }
+  ul li img {
+    display: block;
+
+  }
+  .horizontalnavbar {
+    width: 100dvw;
+  }
+}
+
+/* Page 2 */
+.page2 {
+  height: 85dvh;
+  display: flex;
+  flex-direction: column;
+}
+.rectangle {
+  color: white;
+  font-weight: bolder;
+  align-content: center;
+  background-color: #6ca66c;
+  width: 300px;
+  height: 80px;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  transform: translateX(211px);
+}
+.banner {
+  margin-top: 50px;
+  position: sticky;
+  left: 0;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-top: 40px solid #2e5c2e;
+  transform: translateX(211px);
+}
+.brokerdetails {
+  background-color: rgba(229, 222, 222, 0.443);
+  transform: translate(260px, -180px);
+  z-index: -1;
+  margin-top: 80px;
+  width: 1000px;
+  height: 980px;
+}
+.dot-pattern {
+  transform: translateX(630px);
+  right: 0;
+  width: 250px; /* adjust as needed */
+  height: 90px; /* adjust as needed */
+
+  /* Create dotted pattern */
+  background-image: radial-gradient(#f4b400 1.9px, transparent 1.5px);
+  background-size: 25px 25px; /* controls spacing between dots */
+}
+.firstsection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+}
+.secondsection {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 350px;
+  background-color: rgb(241, 179, 7);
+  margin-top: 80px;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 150px;
+  position: absolute;
+  top: 70px;
+  font-size: 20px;
+}
+.broker {
+  transform: translate(10px, -10px);
+  height: 390px;
+  margin-left: 30px;
+}
+.vl {
+  border-left: 4px solid rgb(255, 255, 255);
+  height: 340px;
+}
+.brokerinfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  height: 350px;
+  width: 450px;
+  justify-content: center;
+  align-content: space-around;
+  text-align: left;
+  margin-left: 10px;
+}
+.brokerinfo p {
+  margin-top: 0;
+  font-size: 30px;
+}
+.brokerinfo h3 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.brokerinfo .credits {
+  font-size: 25px;
+}
+.rect {
+  background-color: rgba(128, 128, 128, 0.114);
+  z-index: -1;
+  height: 230px;
+  width: 430px;
+  position: relative;
+  transform: translate(570px, -360px);
+}
+.square {
+  background-color: rgb(13, 138, 13);
+  height: 75px;
+  width: 80px;
+  transform: translate(690px, -625px);
+}
+.companydetails {
+  transform: translate(0px, -280px);
+  width: 775px;
+  text-align: left;
+  font-size: larger;
+  margin-left: 75px;
+}
+
+
+@media (max-width: 600px) {
+  .page2 {
+    height: 85dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  .rectangle {
+    color: white;
+    font-weight: bolder;
+    align-content: center;
+    background-color: #6ca66c;
+    width: 100px;
+    height: 30px;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    transform: translate(25px, -30px);
+  }
+  .banner {
+    margin-top: 40px;
+    position: sticky;
+    left: 0;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 25px solid #2e5c2e;
+    transform: translate(25px, -30px);
+  }
+  .brokerdetails {
+    background-color: rgba(229, 222, 222, 0.443);
+    transform: translate(55px, -150px);
+    z-index: -1;
+    margin-top: 80px;
+    width: 270px;
+    height: 980px;
+  }
+  .dot-pattern {
+    transform: translateX(180px);
+    right: 0;
+    width: 50px; /* adjust as needed */
+    height: 30px; /* adjust as needed */
+
+    /* Create dotted pattern */
+    background-image: radial-gradient(#f4b400 1px, transparent 1px);
+    background-size: 5px 5px; /* controls spacing between dots */
+  }
+  .firstsection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  .secondsection {
+    display: flex;
+    align-items: center;
+    width: 89%;
+    height: 110px;
+    background-color: rgb(241, 179, 7);
+    margin-top: 35px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 50px;
+    position: absolute;
+    top: 25px;
+    font-size: 10px;
+  }
+  .intro h1 {
+    font-size: 12px;
+  }
+  .broker {
+    transform: translate(-7px, -1px);
+    height: 120px;
+    margin-left: 30px;
+  }
+  .vl {
+    border-left: 2px solid rgb(255, 255, 255);
+    height: 106px;
+
+  }
+  .brokerinfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    height: 350px;
+    width: 500px;
+    justify-content: center;
+    align-content: space-around;
+    text-align: left;
+    margin-left: 2px;
+  }
+  .brokerinfo p {
+    margin-top: 0;
+    font-size: 7px;
+  }
+  .brokerinfo h3 {
+    font-size: 5px;
+    text-decoration: underline;
+  }
+  .brokerinfo h1 {
+    font-size: 7px;
+  }
+  .brokerinfo .credits {
+    font-size: 5px;
+  }
+  .rect {
+    background-color: rgba(128, 128, 128, 0.114);
+    z-index: -1;
+    height: 70px;
+    width: 100px;
+    position: relative;
+    transform: translate(170px, -115px);
+  }
+  .square {
+    background-color: rgb(13, 138, 13);
+    height: 25px;
+    width: 25px;
+    transform: translate(190px, -195px);
+  }
+  .companydetails {
+    transform: translate(0px, -280px);
+    width: 210px;
+    text-align: left;
+    font-size: 10px;
+    margin-left: 50px;
+    transform: translate(-25px, -80px);
+  }
+  .companydetails h1 {
+    font-size: 0.8rem;
+  }
+  .companydetails h2 {
+    font-size: 0.8rem;
+  }
+}
